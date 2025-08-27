@@ -17,3 +17,9 @@ async def read_item(item_id: int):
 @app.get("/users/{user_id}")
 async def read_user(user_id: int):
     return {"user_id": user_id}
+
+
+# add welcome endpoint
+@app.get("/welcome")
+async def welcome():
+    return {"message": "Welcome to logwire!"}
