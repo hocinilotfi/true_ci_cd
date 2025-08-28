@@ -5,10 +5,16 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello Wsorld"}
 
 
 # add welcome endpoint
 @app.get("/welcome")
 async def welcome():
     return {"message": "Welcome to logwire!"}
+
+
+# add health endpoint
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
