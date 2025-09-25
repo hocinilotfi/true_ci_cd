@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello Wsorld"}
+    return {"message": "Hello World, azul fellawen"}
 
 
 # add welcome endpoint
